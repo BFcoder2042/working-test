@@ -1,0 +1,34 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.btn{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 25px;
+    border-radius: 5px;
+    animation: linearAnim 2s infinite linear !important; 
+    transition: .2s;
+    position: relative;
+    justify-content: center;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.action{
+    color: #fff;
+}
+.cancel{
+    color: #888888;
+}
+.save{
+    color: #2C3E50;
+}
+
+.disabled{
+    pointer-events: none;
+    background: $btn-disabled-background !important;
+}

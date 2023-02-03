@@ -1,0 +1,125 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.directoryGoals{
+    display: flex;
+    .directoryGoalsContent {
+        width: 100%;
+        margin-left: 30px;
+        .directoryGoalsFiltres {
+            display: flex;
+            padding: 20px 0px;
+            justify-content: space-between;
+            align-items: center;
+            .directoryGoalsInputs {
+                display: flex;
+                width: -webkit-fill-available;
+                width: -moz-available;
+            }
+            .directoryGoalsExport {
+                display: flex;
+                div{
+                    padding: 10px 5px;
+                    background: white;
+                    border-radius: 15px;
+                    color: #3462a5;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: .2s;
+                }
+                div:nth-child(1) {
+                    margin-right: 10px;
+                }
+                div:hover{
+                    box-shadow: 0px 0px 6px 0px #bfbfbf;
+                }
+            }
+        }
+        .directoryGoalsRows {
+            .directoryGoalsRowsLabels{
+                display: flex;
+                span{
+                    color: #A0A0A0;
+                    display: block;
+                    text-transform: uppercase;
+                    width: 40%;
+                }
+                span:nth-child(1){
+                    padding-left: 25px;
+                }
+            }
+            .directoryGoalsRowsItems {
+                margin-top: 20px;
+                height: 480px;
+                overflow: auto;
+                scrollbar-width: none;
+                .directoryGoalsRowsItem {
+                    display: flex;
+                    height: 60px;
+                    background: white;
+                    border-radius: 15px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    transition: .2s;
+                    opacity: 0;
+                    display: flex;
+                    align-items: center;
+                    animation: myGoalsCard forwards .5s;
+                    .directoryGoalsRowsItemName{
+                        width: 40%;
+                        padding-left: 25px;
+                        font-weight: 600;
+                    }
+                    .directoryGoalsRowsItemCriterion{
+                        width: 40%;
+                    }
+                    .directoryGoalsRowsItemDescription{
+                        width: 34%;
+                    }
+                    .directoryGoalsRowsItemIcons{
+                        display: flex;
+                        .directoryGoalsRowsItemIcon{
+                            margin-right: 20px;
+                            font-size: 20px;
+                            color: #3462a5;
+                            padding: 6px;
+                            background: #e7e9ee;
+                            border-radius: 50px;
+                            cursor: pointer;
+                            transition: .2s;
+                        }
+                        .directoryGoalsRowsItemIcon:hover{
+                            box-shadow: 0px 0px 9px 0px #adadad;
+                        }
+                        .directoryGoalsRowsItemIcon:active{
+                            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        }
+                    }
+                }
+                .directoryGoalsRowsItem:hover{
+                    box-shadow: 0px 4px 5px 2px #ebebeb;
+                }
+            }
+        }
+    }
+}
+
+
+.animateMyGoals{
+    animation: myGoalsCard forwards .5s;
+}
+
+.directoryGoalsRowsItems::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+@keyframes myGoalsCard {
+    from{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

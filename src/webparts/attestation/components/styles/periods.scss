@@ -1,0 +1,60 @@
+@import './variables.scss';
+
+.periods{
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .periods-list-icon{
+        font-size: 25px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    .periods-list-icon:active{
+        transform: scale(0.8);
+    }
+    .periods-arrow{
+        padding: 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 18px;
+        fill: $btn-color;
+        transition: .2s;
+    }
+    .periods-container{
+        color: #888888;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        .period-container_date{
+            color: #2C3E50;
+            text-decoration: underline;
+            padding: 0px 5px;
+        }
+        .period-container_status{
+            text-transform: lowercase;
+        }
+        .period-container-btn{
+            display: flex;
+            justify-content: center;
+            color: $btn-color;
+            font-weight: 100;
+            cursor: pointer;
+            padding-left: 20px;
+        }
+    }
+    .periods-arrow:active{
+        transform: scale(0.8);
+    }
+}
+
+.arrow-disabled{
+    fill: #bbbbbb !important;
+    pointer-events: none;
+}
+
+.btn-disabled{
+    pointer-events: none;
+    color: #888888 !important;
+}

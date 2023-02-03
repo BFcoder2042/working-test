@@ -1,0 +1,79 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .modalContentSideModal{
+        position: fixed;
+        right: 0;
+        height: 100%;
+        background:$modal-content-background;
+        transition: .2s;
+        padding: 30px 50px 30px;
+        overflow: hidden;
+        .modalContentSideModalBack{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 20px;
+            width: fit-content;
+            
+            svg{
+                margin-right: 10px;
+                transition: .2s;
+            }
+            svg:hover{
+                color: $icon-color;
+            }
+        }
+        .modalContentSideModalBack:hover{
+             svg{
+                color: $icon-color;
+                margin-right: 20px;
+            }
+        }
+        .modalContentSideModalTitle{
+            padding: 25px 0px 0px;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .modalContentSideModalContainer{
+            height: 80%;
+            overflow: auto;
+            margin: 15px 0px;
+            scrollbar-width: none;
+        }
+    }
+}
+
+.modalActive{
+    background: $modal-background;
+    z-index: 500;
+}
+
+.modalHide{
+    background: transparent;
+    z-index: -1;
+}
+
+.modalContentSideModalContainer::-webkit-scrollbar {
+    width: 0px;
+    background-color: #f9f9fd;
+  }
+  
+  .modalContentSideModalContainer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #18aaaa;
+  }
+  
+  .modalContentSideModalContainer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+  }

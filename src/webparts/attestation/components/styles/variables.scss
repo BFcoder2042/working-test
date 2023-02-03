@@ -1,0 +1,35 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+$btn-color: #3462A5;
+$corp-color2: #1FA3CA;
+$icon-color: #5CCBE5;
+
+
+
+$layoutContainerBackground: #F5F6FA;
+$navBarContainerBackground: #2c3e5012;
+$navBarContainerLinkColor: #888888;
+$navBarContainerLinkActiveColor: #2C3E50;
+$navBarBtnBackground: #2C3E50;
+$myGoalsCardBackground: #FFF;
+$myGoalsCardBorderRadius: 15px;
+$modal-content-background: #ffff;
+$modal-background: #c4c4c4ab;
+$modal-input-background: #F5F6FA;
+$btn-disabled-background: #C4C4C4;
+$input-error: #ffe8e8;
+
+$progBarGray: #E8E8E8;
+$progBarGreen: #06D010;
+$progBarYellow: #FF9900;
+$progBarRed: #CC0000;
+
+$attestIconGray: #A0A0A0;
+$attestIconGreen: $progBarGreen;
+$attestIconYellow: $progBarYellow;
+$attestIconRed: $progBarRed;
+$attestIconBlack: #000000;
+
+// $lg-breakpoint: 961px;
+$md-breakpoint: 950px;
+$xs-breakpoint: 608px;

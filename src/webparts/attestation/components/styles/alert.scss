@@ -1,0 +1,12 @@
+.alert{
+    padding: 0px 40px 25px;
+    .alert-text{
+        font-size: 17px;
+        text-align: center;
+    }
+    .alert-btn{
+        display: flex;
+        justify-content: end;
+        padding-top: 20px;
+    }
+}

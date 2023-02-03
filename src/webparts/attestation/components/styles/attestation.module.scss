@@ -1,0 +1,22 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import './variables.scss';
+
+*{
+    font-family: 'Jost', sans-serif;
+}
+
+.layoutContainer {
+    background: $layoutContainerBackground;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    .layoutContent {
+        padding: 25px 35px;
+        height: 87%;
+    }
+}
+
+@media screen and (max-width: $md-breakpoint) {
+
+}

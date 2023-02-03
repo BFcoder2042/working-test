@@ -1,0 +1,72 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sts-logo{
+  height: fit-content;
+  .item{
+    transform-origin: center;
+  }
+}
+
+
+.animationFirstLine{
+    animation: animation-first_line infinite 2.5s cubic-bezier(1, -0.45, 0.76, 1.33);
+  }
+  .animationSecondLine{
+    animation: animation-second_line infinite 2.5s linear;
+  }
+  .animationThirdLine{
+    animation: animation-third_line infinite 2.5s cubic-bezier(1, -0.45, 0.75, 0.89);
+  }
+  
+  
+  @keyframes animation-first_line {
+    from{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(360deg);
+    }
+    to{
+      transform: rotate(720deg);
+  }
+  }
+  
+  @keyframes animation-second_line {
+    from{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(-360deg);
+    }
+    to{
+      transform: rotate(-720deg);
+    }
+  }
+  
+  @keyframes animation-third_line {
+    from{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(360deg);
+    }
+    to{
+      transform: rotate(720deg);
+    }
+  }
+
+  .light-color-first_line {
+    fill: #b2d2ff;
+  }
+  .light-color-second_line {
+    fill: #b2d2ff;
+  }
+  .light-color-third_line {
+    fill: #2dcfff;
+  }

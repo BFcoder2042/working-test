@@ -1,0 +1,9 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.sendGoals{
+    .sendGoalsButtons{
+        display: flex;
+        margin: 30px 0px;
+    }
+}

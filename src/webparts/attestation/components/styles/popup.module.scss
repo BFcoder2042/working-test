@@ -1,0 +1,107 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.popupContainer{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 500;
+    transition: .2s;
+    .popupContainerItems{
+        margin-top: 5px;
+        transition: .2s;
+        .popupContainerItem{
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            font-size: 17px;
+            position: relative;
+            transform: translateX(100px);
+            color: #ffffff;
+            margin-bottom: 5px;
+            cursor: pointer;
+            border-left: solid 5px #7171713d;
+            transition: .2s;
+            svg:nth-child(1){
+                margin-right: 20px;
+                font-size: 35px;
+                animation: animatePopupIcon ease .5s forwards;
+                animation-delay: .2s;
+            }
+        }
+        .popupContainerItem:hover{
+            border-left: solid 5px #0000003d;
+        }
+    }
+}
+
+
+.error{
+    background: #bf074b;
+}
+.notification{
+    background: #3397db;
+}
+.warning{
+    background: #f7931d;
+}
+.success{
+    background: #8fbf2f;
+}
+.showPopup{
+    animation: showPopup .3s forwards;
+}
+.hidePopup{
+    animation: hidePopup .3s forwards;
+    height: 0px;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+@keyframes showPopup {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes hidePopup {
+    0%{
+     opacity: 1;
+     transform: translateX(0px);
+    }
+    50%{
+      opacity: 0;
+    }
+    80%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        display: none !important;
+    }
+  }
+  @keyframes animatePopupIcon {
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-5px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+  }

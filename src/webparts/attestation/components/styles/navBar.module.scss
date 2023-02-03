@@ -1,0 +1,94 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.navBar{
+    background: $navBarContainerBackground;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 35px;
+    .navBarItems {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        .navBarItemsLinks {
+            display: flex;
+            align-items: center;
+            position: relative;
+            .navBarItemsLink{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                color: $navBarContainerLinkColor;
+                margin-right: 20px;
+                font-size: 18px;
+                cursor: pointer;
+                position: relative;
+                a{
+                    text-decoration: none;
+                    color: $navBarContainerLinkColor;
+                    transition: .2s;
+                }
+            }
+        }
+        .navBarItemsBtnWrapper {
+            display: flex;
+            align-items: center;
+            .navBarItemsBtn {
+                padding: 0px 15px;
+                height: 40px;
+                background: $navBarBtnBackground;
+                border-radius: 15px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 19px;
+                transition: .2s;
+                svg{
+                    margin-right: 5px;
+                    fill: $icon-color;
+                    stroke-width: 20px;
+                    transition: .2s;
+                }
+            }
+        }
+    }
+}
+
+.navBarItemsBtn:hover{
+    svg{
+        transform: rotate(180deg);
+    }
+}
+
+.navBarItemsBtn:active{
+    transform: scale(0.9);
+}
+
+.navBarItemsLink:hover{
+    a{
+        color: $navBarContainerLinkActiveColor !important;
+    }
+}
+
+.navBarItemsLinkActive{
+    a{
+        color: $navBarContainerLinkActiveColor !important;
+    }
+}
+.navBarItemsLinkActive::after{
+    content: "";
+    background: #3462A5;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: 2s;
+}
+.hide{
+    display: none !important; 
+}

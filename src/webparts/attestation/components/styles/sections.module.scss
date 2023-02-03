@@ -1,0 +1,104 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.sections {
+    .sectionsWrapper {
+        .createSections{
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: $btn-color;
+            cursor: pointer;
+            padding: 0px 10px;
+            width: fit-content;
+            svg{
+                margin-right: 10px;
+                font-size: 21px;
+                transition: .2s;
+            }
+        }
+        .createSections:hover{
+            svg{
+                transform: rotate(180deg);
+            }
+        }
+        .sectionsItems{
+            padding: 15px 25px;
+            .sectionsItem{
+                font-size: 18px;
+                display: flex;
+                width: max-content;
+                margin-bottom: 5px;
+                cursor: pointer;
+                position: relative;
+                flex-direction: column;
+                svg{
+                    margin-right: 10px;
+                    font-size: 19px;
+                }
+                .sectionDrop{
+                    position: absolute;
+                    left: -17px;
+                    transition: .2s;
+                }
+                .sectionsItemMain{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        display: flex;
+                        align-items: center;
+                        transition: .2s;
+                    }
+                }
+                .sectionsItemMain:hover{
+                    span{
+                        color: #2199ff;
+                    }
+                }
+                .sectionsItemChilds{
+                    overflow: hidden;
+                    transition: .2s;
+                    .sectionsItemChild{
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 10px;
+                        transition: .2s;
+                        border-radius: 10px;
+                        margin-top: 5px;
+                    }
+                    .sectionsItemChild:hover{
+                        background: #b5ddff69;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subSectionShow {
+    opacity: 1;
+    max-height: 500px;
+    transition: max-height 1s ease-in;
+}
+
+.subSectionHide {
+    max-height: 0;
+    transition: max-height 0.55s ease-out;
+    opacity: 0;
+}
+
+.dropSubArrowShow{
+    transform: rotate(90deg);
+}
+
+.dropSubArrowHide{
+    transform: rotate(0deg);
+}
+
+.sectionItemMainActive {
+    color: #2199ff;
+}
+
+.sectionItemChildActive {
+    background: #b5ddff69;
+}

@@ -1,0 +1,102 @@
+@import './variables.scss';
+
+.periods-list{
+    .periods-list_label{
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 8px 0px;
+        font-weight: 600;
+    }
+    .btn{
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 8px 15px;
+        background: #39a4ff;
+        width: fit-content;
+        border-radius: 50px;
+        margin-bottom: 10px;
+        transition: .2s;
+    }
+    .btn:active{
+        transform: scale(0.9);
+    }
+    .container{
+        background: #f3f3f3;
+        border-radius: 15px;
+        padding: 10px 25px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        color: #878787;
+        align-items: center;
+        font-weight: 600;
+        transition: .2s;
+        cursor: pointer;
+        .status{
+            padding: 8px 15px;
+            border-radius: 50px;
+            background: #c7c7c7;
+            color: white;
+            min-width: 60px;
+            text-align: center;
+        }
+        .date{
+            text-decoration: underline;
+            min-width: 170px;
+        }
+        .title{
+            min-width: 150px;
+        }
+    }
+    .periods-list_current-period{
+        .periods-list_current-period_container{
+            .periods-list_current-period_date{
+                color: #2c3e50;
+                text-decoration: underline;
+            }
+            .periods-list_current-period_status{
+                padding: 8px 15px;
+                border-radius: 50px;
+                background: #39a4ff;
+                color: #FFFF;
+            }
+            .periods-list_current-period_title{
+                color: #2c3e50;
+            }
+        }
+    }
+    .periods-list_prev-period{
+        .periods-list_prev-period_item{
+            margin-bottom: 15px;
+        }
+    }
+}
+.period-dates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12px;
+    .period-dates_container{
+        width: 60%;
+        .period-dates_date-pickers{
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .period-dates_date-pickers_label{
+                position: absolute;
+                top: -25px;
+                left: 0;
+            }
+            .date-icon{
+                font-size: 25px;
+                color: #3462a5;
+                margin-right: 10px;
+            }
+        }
+    }
+}

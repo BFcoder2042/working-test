@@ -1,0 +1,16 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.createSection {
+    padding: 0px 40px;
+   .sectionName{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+   .createSectionBtn{
+    display: flex;
+    justify-content: end;
+    padding: 10px 0 20px;
+   }
+}

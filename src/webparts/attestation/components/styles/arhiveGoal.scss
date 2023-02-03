@@ -1,0 +1,16 @@
+.arhive-goal{
+    padding: 0px 40px;
+    .arhive-goal-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 50px;
+    }
+    .arhive-goal-btn{
+        display: flex;
+        justify-content: end;
+        padding: 25px 0 20px;
+    }
+}

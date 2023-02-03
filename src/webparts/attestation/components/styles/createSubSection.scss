@@ -1,0 +1,23 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './variables.scss';
+
+.create-sub-section {
+    padding: 0px 40px;
+   .create-sub-section_section-name{
+     height: 110px;
+     width: 75%;
+     display: flex;
+     margin: 0 auto;
+     flex-direction: column;
+     justify-content: space-between;
+     input:first-child{
+       color: #999;
+       user-select: none;
+     }
+   }
+   .create-sub-section_btn{
+    display: flex;
+    justify-content: end;
+    padding: 25px 0 20px;
+   }
+}

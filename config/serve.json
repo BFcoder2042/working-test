@@ -1,0 +1,6 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "initialPage": "https://365sts.sharepoint.com/sites/Certification/_layouts/workbench.aspx"
+}
